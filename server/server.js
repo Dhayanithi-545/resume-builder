@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json())
 
 const corsOptions = {
-  origin: ['https://resume-labs.vercel.app/', 'http://localhost:5173'],
+  origin: ['https://resume-labs.vercel.app', 'http://localhost:5173'],
   credentials: true
 };
 app.use(cors(corsOptions));
