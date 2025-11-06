@@ -120,7 +120,7 @@ export const getUserResumes = async (req,res)=>{
         const userID = req.userID;
 
         // return user resumes
-        const resumes = await Resume.find({userId})
+        const resumes = await Resume.find({userID})
         return res.status(200).json({resumes})
     } catch (error) {
         return res.status(400).json({message:error.message})
